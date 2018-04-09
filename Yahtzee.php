@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Finger+Paint" > 
 <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="/imagenes/icono.gif" />
+<link rel="icon" type="image/png" href="imagenes/icono.gif" />
 
 <title>Yahtzee | Juego</title>
 </head>
