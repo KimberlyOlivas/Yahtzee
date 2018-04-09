@@ -509,7 +509,8 @@ function leeJuego(&$datos_juego) { //Levanta el estado del juego
 		$datos_juego[$i] = $result[$i];
 }
 
-/*function escribeJuego($datos_juego) { //Guarda el estado actual del juego
+/*
+function escribeJuego($datos_juego) { //Guarda el estado actual del juego en un archivo de texto
 	$ArchivoYahtzee = "datos/MiYahtzee.txt";
     $Handle = fopen($ArchivoYahtzee, 'w');
     $Data = implode(";", $datos_juego);
@@ -517,7 +518,7 @@ function leeJuego(&$datos_juego) { //Levanta el estado del juego
     fclose($Handle);
 }
 
-function leeJuego(&$datos_juego) { //Levanta el estado del juego
+function leeJuego(&$datos_juego) { //Levanta el estado del juego desde un archivo de texto
     $ArchivoYahtzee = "datos/MiYahtzee.txt";
     if (file_exists($ArchivoYahtzee)) {
         $Handle = fopen($ArchivoYahtzee, 'r');    
@@ -525,10 +526,10 @@ function leeJuego(&$datos_juego) { //Levanta el estado del juego
         fclose($Handle);
     }
     else
-        $Data = "0;1;2;3;4;5;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1;";
+        $Data = "1;Kim;0;1;2;3;4;5;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1;-1";
     $datos_juego = explode(";", $Data);
-}*/
-
+}
+*/
 ?>
 </body>
 </html>
