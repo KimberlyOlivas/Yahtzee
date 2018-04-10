@@ -216,9 +216,10 @@ function habilitarJugar($atr){ //Habilita o deshabilita los botones de jugadas
 }
 
 function confirmar($i){	//Muestra el mensaje de confirmación en caso de que la jugada eligida tenga 0 puntos
+	global $datos_juego;
 	echo "<script type='text/javascript'>
 			var cont = confirm('Esta jugada tiene 0 puntos. ¿Desea utilizarla de todos modos?');
-			if(cont) window.location.href = 'Yahtzee.php?j=$i&c=t';
+			if(cont) window.location.href = 'Yahtzee.php?id=$datos_juego[0]&j=$i&c=t';
 	</script>";
 }
 
